@@ -1,0 +1,19 @@
+{
+  "name": "messagebird.sms.message",
+  "type": "object",
+  "inputs": {
+    "recipients": {
+      "type": "messagebird.sms.recipient",
+      "description": "List of recipients. A maximum of 50 per send request can be entered."
+    },
+    "bodies": {
+      "type": "string",
+      "description": "List of message bodies. A new message is returned for each body provided."
+    }
+  },
+  "outputs": {
+    "messages": {
+      "type": "messagebird.sms.message"
+    }
+  }
+}

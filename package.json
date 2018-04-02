@@ -1,0 +1,26 @@
+{
+  "name": "xible-np-messagebird",
+  "version": "0.0.1",
+  "description": "Set of MessageBird nodes for XIBLE",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steve2507/xible-np-messagebird"
+  },
+  "bugs": {
+    "url": "https://github.com/steve2507/xible-np-messagebird/issues"
+  },
+  "keywords": [
+    "xible",
+    "nodepack",
+    "messagebird",
+    "sms",
+    "texting"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm shrinkwrap --only=prod"
+  },
+  "dependencies": {
+    "messagebird": "*"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "messagebird",
+  "type": "object",
+  "outputs": {
+    "messagebird": {
+      "type": "messagebird"
+    }
+  },
+  "vault": ["accessKey"]
+}

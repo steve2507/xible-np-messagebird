@@ -1,0 +1,21 @@
+<input
+  type="text"
+  placeholder="originator"
+  required="required"
+  data-output-value="originator"
+  data-description="The sender of the message. This can be a telephone number (including country code) or an alphanumeric string. In case of an alphanumeric string, the maximum length is 11 characters."
+/>
+<input
+  type="text"
+  placeholder="recipient"
+  required="required"
+  data-output-value="recipient"
+  data-hide-if-attached="input[name=recipients]"
+  data-description="Receipients MSISDN (international phone number)."
+/>
+<input
+  type="text"
+  placeholder="body"
+  data-output-value="body"
+  data-hide-if-attached="input[name=bodies]"
+/>

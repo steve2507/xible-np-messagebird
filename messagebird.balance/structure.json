@@ -1,0 +1,15 @@
+{
+  "name": "messagebird.balance",
+  "description": "This object represents your balance at MessageBird.com",
+  "type": "object",
+  "inputs": {
+    "messagebird": {
+      "type": "messagebird"
+    }
+  },
+  "outputs": {
+    "balance": {
+      "type": "messagebird.balance"
+    }
+  }
+}

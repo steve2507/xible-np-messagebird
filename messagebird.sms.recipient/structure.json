@@ -1,0 +1,9 @@
+{
+  "name": "messagebird.sms.recipient",
+  "type": "object",
+  "outputs": {
+    "recipient": {
+      "type": "messagebird.sms.recipient"
+    }
+  }
+}

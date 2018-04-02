@@ -1,0 +1,20 @@
+{
+  "name": "messagebird.sms.send",
+  "type": "action",
+  "inputs": {
+    "trigger": {
+      "type": "trigger"
+    },
+    "messagebird": {
+      "type": "messagebird"
+    },
+    "messages": {
+      "type": "messagebird.sms.message"
+    }
+  },
+  "outputs": {
+    "done": {
+      "type": "trigger"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "messagebird.sms.recipient": {
+    "color": "dodgerblue",
+    "extends": "string"
+  }
+}
