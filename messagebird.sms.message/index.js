@@ -5,7 +5,7 @@ module.exports = (NODE) => {
   const bodiesIn = NODE.getInputByName('bodies');
 
   const messagesOut = NODE.getOutputByName('messages');
-  messagesOut.on('trigger', async (conn, state, callback) => {
+  messagesOut.on('trigger', async (conn, state) => {
     const bodies = await bodiesIn.getValues(state);
     if (!bodies.length) {
       bodies.push(NODE.data.body);
@@ -18,12 +18,12 @@ module.exports = (NODE) => {
       recipients.push(NODE.data.recipient);
     }
 
-    const messages = bodies.map((body) => ({
+    const messages = bodies.map(body => ({
       originator,
       body,
       recipients
     }));
 
-    callback(messages);
+    return messages;
   });
 };

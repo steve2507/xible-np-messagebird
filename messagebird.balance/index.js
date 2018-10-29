@@ -4,7 +4,7 @@ module.exports = (NODE) => {
   const messageBirdIn = NODE.getInputByName('messagebird');
   const balanceOut = NODE.getOutputByName('balance');
 
-  balanceOut.on('trigger', async (conn, state, callback) => {
+  balanceOut.on('trigger', async (conn, state) => {
     const messageBirds = await messageBirdIn.getValues(state);
 
     const balances = await Promise.all(messageBirds.map((messageBird) => {
@@ -20,6 +20,6 @@ module.exports = (NODE) => {
       });
     }));
 
-    callback(balances);
+    return balances;
   });
 };

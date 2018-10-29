@@ -5,10 +5,10 @@ module.exports = (NODE) => {
   let messageBird;
 
   const messageBirdOut = NODE.getOutputByName('messagebird');
-  messageBirdOut.on('trigger', (conn, state, callback) => {
+  messageBirdOut.on('trigger', async (conn, state) => {
     if (!messageBird) {
       messageBird = new MessageBird(NODE.data.accessKey);
     }
-    callback(messageBird);
+    return messageBird;
   });
 };
